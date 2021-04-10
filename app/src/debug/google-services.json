@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "473679611516",
+    "project_id": "tp-dfamp",
+    "storage_bucket": "tp-dfamp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473679611516:android:1fdcaf57eb93b95450abf9",
+        "android_client_info": {
+          "package_name": "com.s3innovate.tpdfamp.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473679611516-4srchd4232kdt50jqb6unumgdkchchje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHPbbe9zCg93-hf_Dpld4BRBZxxhTKhhY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "473679611516-4srchd4232kdt50jqb6unumgdkchchje.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "473679611516-c99luvndq3jmf18jnj42v4s9nd5rcnpq.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.s3innovate.tpdfamp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
