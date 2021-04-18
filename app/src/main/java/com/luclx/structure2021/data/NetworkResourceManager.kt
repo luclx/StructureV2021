@@ -1,6 +1,5 @@
 package com.luclx.structure2021.data
 
-import android.content.Context
 import android.util.Log
 import androidx.annotation.WorkerThread
 import kotlinx.coroutines.Dispatchers
@@ -10,20 +9,17 @@ import kotlinx.coroutines.flow.flow
 import kotlinx.coroutines.flow.flowOn
 import org.koin.core.component.KoinApiExtension
 import org.koin.core.component.KoinComponent
-import org.koin.core.component.inject
 
 @KoinApiExtension
-abstract class NetworkResourceManager<NetworkModel : Any, ViewModel>(
+abstract class NetworkResourceManager<Entity : Any, ViewModel>(
     private val shouldShowLoading: Boolean = true
 ) : KoinComponent {
 
-    private val context: Context by inject()
+    @WorkerThread
+    abstract suspend fun doFetchFromNetwork(): Entity
 
     @WorkerThread
-    abstract suspend fun doFetchFromNetwork(): NetworkModel
-
-    @WorkerThread
-    abstract suspend fun processResponse(response: NetworkModel): ViewModel
+    abstract suspend fun processResponse(response: Entity): ViewModel
 
     /**
      * [execute] Requesting to Api server
